@@ -72,9 +72,10 @@ app = FastAPI(title='AETHER Climate API', version='2.0.0', lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://climate-analyzer-aether.vercel.app",
-        "https://climate-analyzer-aether-git-main-likhitha-v-projects.vercel.app",
-    ],
+    "https://climate-analyzer-aether-m1h6-beta.vercel.app",
+    "https://climate-analyzer-aether.vercel.app",
+    "https://climate-analyzer-aether-git-main-likhitha-v-projects.vercel.app",
+],
     allow_methods=["GET", "POST", "OPTIONS"],
     allow_headers=["Content-Type"],
 )
